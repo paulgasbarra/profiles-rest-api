@@ -26,7 +26,8 @@ SECRET_KEY = 'x8w*k-_j$6h&8+eelmj&n0a%^d5s^(3*i-rok9kpw5w5^68iq^'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '0.0.0.0'
+    '0.0.0.0',
+    '127.0.0.1'
 ]
 
 
@@ -123,3 +124,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+AUTH_USER_MODEL = 'profiles_api.UserProfile'
